@@ -54,7 +54,7 @@ export const COURSES: any = {
     url: 'serverless-angular'
   },
 
-  /*
+
 
 
   5: {
@@ -68,7 +68,6 @@ export const COURSES: any = {
     url: 'angular-for-beginners'
   },
 
-*/
 
   12: {
     id: 12,
