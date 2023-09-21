@@ -69,7 +69,6 @@ export class HomeComponent implements OnInit {
       dialogTitle:"Create Course",
       mode: 'create'
     };
-    console.log("test");
     
     this.dialog.open(EditCourseDialogComponent, dialogConfig);
 

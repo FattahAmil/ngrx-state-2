@@ -3,17 +3,17 @@
     <mat-sidenav #start>
         <mat-nav-list (click)="start.close()">
 
-            <a mat-list-item routerLink="/courses">
+            <a mat-list-item routerLink="/courses" *ngIf="isLoggedOut$">
                 <mat-icon>library_books</mat-icon>
                 <span>Courses</span>
             </a>
 
-            <a mat-list-item routerLink="/login">
+            <a mat-list-item routerLink="/login" *ngIf="isLoggedIn$">
                 <mat-icon>account_circle</mat-icon>
                 <span>Login</span>
             </a>
 
-            <a mat-list-item  (click)="logout()">
+            <a mat-list-item  (click)="logout()" *ngIf="isLoggedOut$">
                 <mat-icon>exit_to_app</mat-icon>
                 <span>Logout</span>
             </a>
